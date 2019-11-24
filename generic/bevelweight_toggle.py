@@ -2,7 +2,7 @@ import bpy
 import bmesh
 
 '''
-Toogles Bevel edge values between 0 and 1 using the bevel value on the last edge selected
+Toggles Bevel edge values between 0 and 1 using the bevel value on the last edge selected
 '''
 
 def toggleBevel():
