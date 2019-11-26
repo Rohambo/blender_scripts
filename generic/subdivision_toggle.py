@@ -2,6 +2,12 @@
 import bpy
 import bmesh
 
+'''
+Toggles the show_viewport of subdiv modifier on selected object/s based on the value of the last selected object.
+If a mesh has multiple subdiv modifiers, it operates on the last one tree.
+If the last selected object doesn't have a subdiv modifier, the tool will skip the toggle.
+'''
+
 def toggleSubdiv():
     objs = bpy.context.selected_objects
     activeObj = bpy.context.active_object
