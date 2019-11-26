@@ -11,7 +11,7 @@ def toggleBevel():
     mesh = obj.data
     bm = bmesh.from_edit_mesh(mesh)
 
-    bevelWeightLayer = bm.edges.layers.bevel_weight['BevelWeight']
+    bevelWeightLayer = bm.edges.layers.bevel_weight.verify()
     selectedEdges = [e for e  in bm.edges if e.select]
     lastEdge = selectedEdges[-1]
 
